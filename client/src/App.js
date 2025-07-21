@@ -144,7 +144,7 @@ export default function App() {
       <header className="hero">
         <div className="hero-content">
           <h1>
-            <span className="brand-gradient">DocGuard</span>
+            <span className="brand-gradient">DOCCU</span>
           </h1>
           <p className="tagline">
             AI‑powered document insights &amp; risk defence — in one click.
@@ -193,7 +193,7 @@ export default function App() {
                 </Card>
               )}
               {simpleExplanation && (
-                <Card color="yellow" title="Explain Like I'm 5">
+                <Card color="yellow" title="Explained Simply">
                   {formatGeminiText(simpleExplanation)}
                 </Card>
               )}
@@ -222,7 +222,7 @@ export default function App() {
         {/* ---------- Q&A ---------- */}
         {isAnalyzed && (
           <section className="qa-box">
-            <h3>Ask your document</h3>
+            <h3>Ask about your document</h3>
             <input
               className="qa-input"
               placeholder="e.g. Is there a refund policy?"
@@ -238,7 +238,7 @@ export default function App() {
 
       {/* ---------- Footer ---------- */}
       <footer className="site-footer">
-        &copy; {new Date().getFullYear()} DocGuard&nbsp;&middot; All rights
+        &copy; {new Date().getFullYear()} DOCCU&nbsp;&middot; All rights
         reserved.
       </footer>
     </>
