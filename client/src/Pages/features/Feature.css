@@ -1,0 +1,64 @@
+/* Remove unwanted scrollbars */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Prevent vertical overflow unless absolutely needed */
+body {
+  overflow-y: auto;
+}
+
+.features-section {
+  padding: 3.5rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #0072FF;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background: white;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.feature-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0072FF;
+  margin-bottom: 1.5rem;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}

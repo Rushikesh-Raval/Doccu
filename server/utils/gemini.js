@@ -65,11 +65,14 @@ Answer in a clear and concise way. If the answer isn't in the document, say "I c
   return await summarizeWithGemini(prompt);
 }
 
+
+
 module.exports = {
   summarizeWithGemini,
   detectRisksWithGemini,
   // analyzeToneWithGemini,
   explainSimplyWithGemini,
   suggestActionsWithGemini,
-  answerQuestionWithGemini, 
+  answerQuestionWithGemini,
+ 
 };
